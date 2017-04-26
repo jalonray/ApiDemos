@@ -18,4 +18,4 @@
         android:rowDelay="75%"
         android:columnDelay="0%"
         android:directionPriority="none"
-        android:animation="@anim/wave_scale" />
+        android:animation="@animator/wave_scale" />

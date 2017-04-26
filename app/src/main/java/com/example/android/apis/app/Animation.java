@@ -82,7 +82,7 @@ public class Animation extends Activity {
             // activity on top.  Note that we need to also supply an animation
             // (here just doing nothing for the same amount of time) for the
             // old activity to prevent it from going away too soon.
-            overridePendingTransition(R.anim.fade, R.anim.hold);
+            overridePendingTransition(R.animator.fade, R.animator.hold);
         }
     };
 
@@ -96,7 +96,7 @@ public class Animation extends Activity {
             // the duration of the animation we force the exiting activity
             // to be Z-ordered on top (even though it really isn't) to achieve
             // the effect we want.
-            overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit);
+            overridePendingTransition(R.animator.zoom_enter, R.animator.zoom_exit);
         }
     };
 
@@ -109,7 +109,7 @@ public class Animation extends Activity {
             // to be Z-ordered on top (even though it really isn't) to achieve
             // the effect we want.
             ActivityOptions opts = ActivityOptions.makeCustomAnimation(Animation.this,
-                    R.anim.fade, R.anim.hold);
+                    R.animator.fade, R.animator.hold);
             // Request the activity be started, using the custom animation options.
             startActivity(new Intent(Animation.this, AlertDialogSamples.class), opts.toBundle());
         }
@@ -124,7 +124,7 @@ public class Animation extends Activity {
             // to be Z-ordered on top (even though it really isn't) to achieve
             // the effect we want.
             ActivityOptions opts = ActivityOptions.makeCustomAnimation(Animation.this,
-                    R.anim.zoom_enter, R.anim.zoom_enter);
+                    R.animator.zoom_enter, R.animator.zoom_enter);
             // Request the activity be started, using the custom animation options.
             startActivity(new Intent(Animation.this, AlertDialogSamples.class), opts.toBundle());
         }

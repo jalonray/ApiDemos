@@ -49,9 +49,9 @@ public class TextSwitcher1 extends Activity implements ViewSwitcher.ViewFactory,
         mSwitcher.setFactory(this);
 
         Animation in = AnimationUtils.loadAnimation(this,
-                android.R.anim.fade_in);
+                android.R.animator.fade_in);
         Animation out = AnimationUtils.loadAnimation(this,
-                android.R.anim.fade_out);
+                android.R.animator.fade_out);
         mSwitcher.setInAnimation(in);
         mSwitcher.setOutAnimation(out);
 

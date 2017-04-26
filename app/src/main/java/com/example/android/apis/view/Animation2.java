@@ -54,27 +54,27 @@ public class Animation2 extends Activity implements
 
         case 0:
             mFlipper.setInAnimation(AnimationUtils.loadAnimation(this,
-                    R.anim.push_up_in));
+                    R.animator.push_up_in));
             mFlipper.setOutAnimation(AnimationUtils.loadAnimation(this,
-                    R.anim.push_up_out));
+                    R.animator.push_up_out));
             break;
         case 1:
             mFlipper.setInAnimation(AnimationUtils.loadAnimation(this,
-                    R.anim.push_left_in));
+                    R.animator.push_left_in));
             mFlipper.setOutAnimation(AnimationUtils.loadAnimation(this,
-                    R.anim.push_left_out));
+                    R.animator.push_left_out));
             break;
         case 2:
             mFlipper.setInAnimation(AnimationUtils.loadAnimation(this,
-                    android.R.anim.fade_in));
+                    android.R.animator.fade_in));
             mFlipper.setOutAnimation(AnimationUtils.loadAnimation(this,
-                    android.R.anim.fade_out));
+                    android.R.animator.fade_out));
             break;
         default:
             mFlipper.setInAnimation(AnimationUtils.loadAnimation(this,
-                    R.anim.hyperspace_in));
+                    R.animator.hyperspace_in));
             mFlipper.setOutAnimation(AnimationUtils.loadAnimation(this,
-                    R.anim.hyperspace_out));
+                    R.animator.hyperspace_out));
             break;
         }
     }

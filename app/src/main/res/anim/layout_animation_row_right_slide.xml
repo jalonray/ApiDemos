@@ -17,4 +17,4 @@
 <layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
         android:delay="10%"
         android:animationOrder="reverse"
-        android:animation="@anim/slide_right" />
+        android:animation="@animator/slide_right" />
